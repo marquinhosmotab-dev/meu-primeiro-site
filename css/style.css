@@ -24,6 +24,11 @@
     margin:20px;
     width:400px;
     box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
 }
 
 .card-festas {
