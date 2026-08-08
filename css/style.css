@@ -33,12 +33,14 @@ header {
     flex-direction: row;
     align-items: flex-end;
     flex-wrap: wrap;
+    grid-area: cabecalho;
 }
 
 
 .menu-principal {
     background-color:#FF7D00;
     padding: 15px;
+    grid-area: conteudo;
     
 }
 
@@ -69,6 +71,7 @@ header {
 body {
     background-color:#FFECD1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* grid-template-aeras: */
 }
 
 .noticia-oficial {
@@ -97,6 +100,7 @@ footer {
     color:#FF7D00 ; 
     padding: 20px;
     text-align: center;
+    grid-area: rodape;
 }
 
 
@@ -124,4 +128,8 @@ footer {
 
     grid-column: 3;
     /* Neste caso a foto foi "obrigada" a ir pro lado direito. */
+}
+
+.conteudo {
+    grid-area: conteudo;
 }
