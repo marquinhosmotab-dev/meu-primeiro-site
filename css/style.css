@@ -115,9 +115,13 @@ footer {
 }
 
 .foto-destaque {
-    grid-column: 1/3;
+    grid-column: span 2;
 }
 
 .foto-alta {
     grid-row: 1/3;
+    /* A foto está do lado esquerdo */
+
+    grid-column: 3;
+    /* Neste caso a foto foi "obrigada" a ir pro lado direito. */
 }
