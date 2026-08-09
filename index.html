@@ -1,116 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portal Cultural de Canhotinho</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>PORTAL CULTURAL DE CANHOTINHO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
 
-    <!-- Cabeçalho da página -->
     <header>
-
-        <!-- Logo -->
-        <img src="./images/logo-canhotinho.png"
-             alt="Logo da Prefeitura de Canhotinho">
-
-        <!-- Título principal -->
-        <h1 class="titulo-principal">
-            Portal Cultural de Canhotinho
-        </h1>
-
-        <!-- Menu de navegação -->
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">História</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-
+        <img src="imagem/logo-canhotinho.png" alt="logo canhotinho" width="200" height="100"> 
+        <h1 class="titulo-principal">CULTURA DE CANHOTINHO</h1>
     </header>
 
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 
-    <!-- Conteúdo principal -->
     <main>
+        <img src="imagem/banner-cidade.jpg" alt="banner da cidade" width="100%">
+        
+        <section class="card_festas">
+            <h2> FESTAS POPULARES</h2>
+            <h3>Festa de São Sebastião</h3>
+            <p>O padroeiro de <strong>Canhotinho</strong> é celebrado com muita alegria todo mês de janeiro.</p>
+            <img src="imagem/festa-padroeiro.jpg" alt="festa do padroeiro" width="250"> 
+       </section>
 
-        <!-- Apresentação -->
-        <section class="box-section">
+        <p>Outras festas tradicionais:</p> 
+        <ul>
+            <li>Carnaval de Rua</li>
+            <li>Festa Junina no Centro</li>
+            <li>Aniversário da cidade</li>
+        </ul>
 
-            <h2>Bem-vindo ao Portal Cultural de Canhotinho</h2>
+        <p>Siga o <a href="https://www.instagram.com/" target="">Instagram Oficial da Cultura</a> para ver as fotos dos eventos!</p> 
 
-            <p>
-                Conheça um pouco da cultura, da história e das tradições
-                de Canhotinho.
-            </p>
+          <h2> Galeria de Fotos</h2>
 
+        <section class="galeria-turismo">
+            <img src="imagem/igreja-matriz.jpg" alt="Igreja Matriz de Canhotinho" class="foto-turismo foto-destaque">
+            <img src="imagem/praça-do-centro.jpg" alt="Praça do Centro de Canhotinho" class="foto-turismo">
+            <img src="imagem/estatua-do-rio-canhoto.webp" alt="Estátua de Canhotinho" class="foto-turismo foto-alta">
+            <img src="imagem/torre-da-vivo.webp" alt="Torre da Vivo de Canhotinho" class="foto-turismo">
+              <img src="imagem/rio-canhonto.jpg" alt="Rio de Canhotinho" class="foto-turismo">
+              
         </section>
+        
 
 
-        <!-- História -->
-        <section class="box-section">
-
-            <h2 id="festas">História de Canhotinho</h2>
-
-            <p>
-                Canhotinho é um município localizado no estado de Pernambuco.
-                O município possui uma história marcada por sua cultura,
-                suas tradições e por sua população.
-            </p>
-
+        <section class="box_section">
+            <h2> Como Participar dos Eventos</h2>
+            <p>Siga o passo a passo para se inscrever:</p>
+            <ol>
+                <li>Acesse o formulário</li>
+                <li>Preencha seus dados pessoais</li>
+                <li>Aguarde o e-mail de confirmação</li>
+            </ol>
         </section>
-
-
-        <!-- Festas e cultura -->
-        <section class="box-section">
-
-            <h2>Festas e Cultura</h2>
-
-            <p>
-                A cultura de Canhotinho é marcada por festas, tradições,
-                manifestações culturais e eventos que fazem parte da
-                identidade da população.
-            </p>
-
-        </section>
-
-
-        <!-- Galeria -->
-        <section class="galeria-section">
-
-            <h2>Galeria de Fotos</h2>
-
-            <div class="galeria-turismo">
-
-                <img src="./images/igreja-matriz.jpg"
-                     alt="Igreja Matriz de Canhotinho"
-                     class="foto-turismo">
-
-                <img src="./images/praca-do-centro.jpg"
-                     alt="Praça do Centro de Canhotinho"
-                     class="foto-turismo">
-
-            </div>
-
-        </section>
-
     </main>
+    
+<article class="noticia-oficial">
+    <h2 class="titulo-noticia">COMUNICADO OFICIAL: Obras na Estação Ferroviária</h2>
+    
+    <p class="texto-noticia">
+        A Prefeitura Municipal de Canhotinho informa que, a partir da próxima segunda-feira, terão início as obras de restauração da Antiga Estação Ferroviária. O projeto visa preservar o patrimônio histórico e cultural do nosso município.
+    </p>
 
+    <p class="texto-noticia">
+        Durante o período de obras, o acesso ao local estará temporariamente restrito por rígidas normas de segurança. Pedimos a compreensão de todos os munícipes e ressaltamos que a área será reaberta em breve.
+    </p>
 
-    <!-- Rodapé -->
+    <p class="assinatura-noticia">
+        Gabinete do Prefeito<br>
+        <strong>Prefeitura de Canhotinho</strong>
+    </p>
+</article>
+
+    
     <footer>
-
-        <p>
-            Portal Cultural de Canhotinho - 2026
-        </p>
-
+        <p><strong><em>Todos os direitos reservados</em></strong></p>
+        <p><strong>2026</strong></p>
+        <a href="https://wa.me/87991465317" target="_blank">Fale conosco no WhatsApp</a>
     </footer>
-
 </body>
-
 </html>
