@@ -1,308 +1,116 @@
 <!DOCTYPE html>
-<!-- Informa ao navegador que este documento utiliza HTML5 -->
-
 <html lang="pt-br">
-<!-- Início da página HTML e define que o idioma é português do Brasil -->
 
 <head>
-    <!-- Informações da página que não aparecem diretamente no conteúdo -->
-
     <meta charset="UTF-8">
-    <!-- Permite acentos e caracteres especiais -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Faz a página se adaptar a celulares e tablets -->
 
-    <title>Projeto | Prefeitura</title>
-    <!-- Título exibido na aba do navegador -->
+    <title>Portal Cultural de Canhotinho</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Conecta o HTML ao arquivo CSS -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"
-    >
-    <!-- Importa as fontes utilizadas no projeto -->
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<!-- Fim do head -->
-
 
 <body>
-    <!-- Todo o conteúdo visível da página -->
 
-
+    <!-- Cabeçalho da página -->
     <header>
-        <!-- Cabeçalho da página -->
 
-        <img
-            src="./images/logo-canhotinho.png"
-            alt="Logo da Prefeitura de Canhotinho"
-        >
+        <!-- Logo -->
+        <img src="./images/logo-canhotinho.png"
+             alt="Logo da Prefeitura de Canhotinho">
 
+        <!-- Título principal -->
         <h1 class="titulo-principal">
             Portal Cultural de Canhotinho
         </h1>
-        <!-- Título principal -->
+
+        <!-- Menu de navegação -->
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
 
     </header>
 
 
-    <nav class="menu-principal">
-        <!-- Menu de navegação -->
+    <!-- Conteúdo principal -->
+    <main>
 
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <!-- Apresentação -->
+        <section class="box-section">
 
-    </nav>
-
-
-    <main class="conteudo">
-        <!-- Conteúdo principal da página -->
-
-        <section>
-            <img
-                src="./images/banner-cidade.jpg"
-                alt="Banner da cidade"
-                width="100%"
-            >
+            <h2>Bem-vindo ao Portal Cultural de Canhotinho</h2>
 
             <p>
-                Bem-vindo ao maior acervo digital da nossa cidade.
-            </p>
-            <!-- Parágrafo de apresentação -->
-        </section>
-
-
-        <section class="card-festas">
-            <!-- Seção sobre festas populares -->
-
-            <h2 class="subtitulo">
-                Festas Populares
-            </h2>
-
-            <h3>
-                Festa de São Sebastião
-            </h3>
-
-            <p>
-                O padroeiro de <strong>Canhotinho</strong> é celebrado
-                com muita alegria todo mês de janeiro.
+                Conheça um pouco da cultura, da história e das tradições
+                de Canhotinho.
             </p>
 
         </section>
 
 
-        <section>
-            <!-- Segunda seção -->
+        <!-- História -->
+        <section class="box-section">
 
-            <h2 class="subtitulo">
-                Outras festas tradicionais:
-            </h2>
-
-            <ul>
-                <!-- Lista de festas -->
-
-                <li>Carnaval de rua</li>
-                <li>Festa Junina no Centro</li>
-                <li>Aniversário da Cidade</li>
-
-            </ul>
-
-        </section>
-
-
-        <section>
-            <!-- Seção de novidades -->
-
-            <h2 class="subtitulo">
-                Acompanhe as Novidades
-            </h2>
+            <h2 id="festas">História de Canhotinho</h2>
 
             <p>
-                Siga
-                <a
-                    href="https://www.instagram.com/sectejcanhotinho/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    o Instagram Oficial da Cultura
-                </a>
-                para ver fotos dos eventos!
+                Canhotinho é um município localizado no estado de Pernambuco.
+                O município possui uma história marcada por sua cultura,
+                suas tradições e por sua população.
             </p>
 
         </section>
 
 
-        <section>
-            <!-- Galeria de fotos -->
+        <!-- Festas e cultura -->
+        <section class="box-section">
 
-            <h2>
-                Galeria de Fotos
-            </h2>
-
-            <section class="galeria-turismo">
-
-                <img
-                    src="images/igreja-matriz.jpg"
-                    alt="Igreja Matriz de Canhotinho"
-                    class="foto-turismo foto-destaque"
-                >
-
-                <img
-                    src="images/praça-do-centro.jpg"
-                    alt="Praça do Centro de Canhotinho"
-                    class="foto-turismo"
-                >
-
-                <img
-                    src="images/estatua-do-rio-canhoto.webp"
-                    alt="Estátua de Canhotinho"
-                    class="foto-turismo foto-alta"
-                >
-
-                <img
-                    src="images/torre-da-vivo.webp"
-                    alt="Torre da Vivo de Canhotinho"
-                    class="foto-turismo"
-                >
-
-                <img
-                    src="images/rio-canhonto.jpg"
-                    alt="Rio de Canhotinho"
-                    class="foto-turismo"
-                >
-
-            </section>
-
-        </section>
-
-
-        <section class="box_section">
-            <!-- Seção com instruções para participar dos eventos -->
-
-            <h2 class="subtitulo">
-                Como participar dos Eventos
-            </h2>
+            <h2>Festas e Cultura</h2>
 
             <p>
-                Siga o passo a passo para se inscrever.
-            </p>
-
-            <ol>
-                <!-- Lista ordenada -->
-
-                <li>Acesse o formulário online.</li>
-                <li>Preencha seus dados pessoais.</li>
-                <li>Aguarde o e-mail de confirmação.</li>
-
-            </ol>
-
-        </section>
-
-
-        <article>
-            <!-- Artigo com informações da cidade -->
-
-            <p>
-                Localização: Agreste pernambucano
-            </p>
-
-            <p>
-                Distância da capital: 210 km
-            </p>
-
-            <p>
-                Atividade principal: Agropecuária e comércio local
-            </p>
-
-        </article>
-
-
-        <section>
-            <!-- Seção sobre a exposição -->
-
-            <h2 class="subtitulo">
-                Notícia: Nova exposição no centro
-            </h2>
-
-            <img
-                src="./images/festa-padroeiro.jpg"
-                alt="Festa do Padroeiro"
-                width="300"
-            >
-
-            <p>
-                A prefeitura convida todos para a
-                <i>Exposição Raízes</i>
-                na antiga estação ferroviária.
+                A cultura de Canhotinho é marcada por festas, tradições,
+                manifestações culturais e eventos que fazem parte da
+                identidade da população.
             </p>
 
         </section>
 
 
-        <article class="noticia-oficial">
-            <!-- Notícia oficial -->
+        <!-- Galeria -->
+        <section class="galeria-section">
 
-            <h2 class="titulo-noticia">
-                COMUNICADO OFICIAL: Obras na Estação Ferroviária
-            </h2>
+            <h2>Galeria de Fotos</h2>
 
-            <p class="texto-noticia">
-                A Prefeitura Municipal de Canhotinho informa que,
-                a partir da próxima segunda-feira, terão início as
-                obras de restauração da Antiga Estação Ferroviária.
-                O projeto visa preservar o patrimônio histórico e
-                cultural do nosso município.
-            </p>
+            <div class="galeria-turismo">
 
-            <p class="texto-noticia">
-                Durante o período de obras, o acesso ao local estará
-                temporariamente restrito por rígidas normas de segurança.
-                Pedimos a compreensão de todos os munícipes e ressaltamos
-                que a área será reaberta em breve.
-            </p>
+                <img src="./images/igreja-matriz.jpg"
+                     alt="Igreja Matriz de Canhotinho"
+                     class="foto-turismo">
 
-            <p class="assinatura-noticia">
-                Gabinete do Prefeito<br>
-                <strong>Prefeitura de Canhotinho</strong>
-            </p>
+                <img src="./images/praca-do-centro.jpg"
+                     alt="Praça do Centro de Canhotinho"
+                     class="foto-turismo">
 
-        </article>
+            </div>
+
+        </section>
 
     </main>
-    <!-- Fim do conteúdo principal -->
 
 
+    <!-- Rodapé -->
     <footer>
-        <!-- Rodapé da página -->
 
-        CANHOTINHO 2026, CITEC © (87) 9999-0000
-
-        <br><br>
-
-        <!-- Link para contato pelo WhatsApp -->
-
-        <a
-            href="https://wa.me/5587999489800"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Fale conosco no WhatsApp!
-        </a>
+        <p>
+            Portal Cultural de Canhotinho - 2026
+        </p>
 
     </footer>
 
-
 </body>
-<!-- Fim do conteúdo da página -->
 
 </html>
-<!-- Fim do documento HTML -->
