@@ -1,57 +1,77 @@
-/* FFECD1 - Cor clara */
-/* FF7D00 - Cor vibrante */
-/* 78290F - Cor escura */
+/* Cores utilizadas no projeto */
+/* #FFECD1 - Cor clara */
+/* #FF7D00 - Cor vibrante */
+/* #78290F - Cor escura */
+
+
+/* Configuração geral da página */
+
+body {
+    margin: 0;
+    background-color: #FFECD1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #78290F;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Logo */
+
+header img {
+    width: 120px;
+}
 
 
 /* Título principal */
+
 .titulo-principal {
-    color: blue;
+    color: #FFECD1;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* Subtítulo */
+
 .subtitulo {
-    color: #78290F;
-}
-
-
-/* Título das festas */
-#festas {
-    color: blue;
-}
-
-
-/* Caixa da seção */
-.box_section {
-    background: yellow;
-    padding: 20px;
-    border: 10px solid cyan;
-    margin: 20px;
-    width: 400px;
-    box-sizing: border-box;
-}
-
-
-/* Cabeçalho */
-header {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    grid-area: cabecalho;
+    color: #FF7D00;
 }
 
 
 /* Menu principal */
+
 .menu-principal {
     background-color: #FF7D00;
     padding: 15px;
-    grid-area: menu;
 }
 
+
+/* Lista do menu */
+
+.menu-principal ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+
+/* Itens do menu */
+
+.menu-principal li {
+    margin-right: 20px;
+}
+
+
+/* Links do menu */
 
 .menu-principal a {
     text-decoration: none;
@@ -59,111 +79,60 @@ header {
 }
 
 
-.menu-principal ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+/* Seções */
 
-
-.menu-principal li {
-    margin-right: 20px;
-}
-
-
-/* Cards das festas */
-.card-festas {
-    background-color: lightgray;
-    width: 400px;
+.box-section {
+    background-color: #FFFFFF;
     padding: 20px;
-    border: 3px solid black;
-    margin: 30px;
-    box-sizing: border-box;
+    margin: 20px;
 }
 
 
-/* Corpo da página */
-body {
-    background-color: #FFECD1;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
+/* Títulos das seções */
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "cabecalho"
-        "menu"
-        "conteudo"
-        "rodape";
+.box-section h2 {
+    color: #78290F;
 }
 
 
-/* Notícia oficial */
-.noticia-oficial {
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
+/* ID utilizado na seção de festas */
 
-
-/* Texto da notícia */
-.texto-noticia {
-    text-align: justify;
-    line-height: 1.6;
+#festas {
     color: #FF7D00;
 }
 
 
-/* Título da notícia */
-.titulo-noticia {
-    font-weight: 800;
-    font-size: 26px;
-}
+/* Galeria */
 
-
-/* Rodapé */
-footer {
-    background-color: #78290F;
-    color: #FF7D00;
+.galeria-section {
     padding: 20px;
     text-align: center;
-    grid-area: rodape;
 }
 
 
-/* Galeria de turismo */
+/* Área das fotos */
+
 .galeria-turismo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 150px;
+    display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 
-/* Fotos da galeria */
+/* Fotos */
+
 .foto-turismo {
-    width: 100%;
-    border-radius: 8px;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
-    height: 100%;
 }
 
 
-/* Foto em destaque */
-.foto-destaque {
-    grid-column: span 2;
-}
+/* Rodapé */
 
-
-/* Foto alta */
-.foto-alta {
-    grid-row: 1 / 3;
-    grid-column: 3;
-}
-
-
-/* Conteúdo */
-.conteudo {
-    grid-area: conteudo;
+footer {
+    background-color: #78290F;
+    color: #FFECD1;
+    text-align: center;
+    padding: 20px;
 }
