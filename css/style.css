@@ -2,29 +2,23 @@
 /* FF7D00 - Cor vibrante */
 /* 78290F - Cor escura */
 
-
-
 .titulo-principal {
-    color:blue ;
-    font-size: 40px ;
-    font-family: Arial, Helvetica, sans-serif
-}
-.subtitulo {
-    color:goldenrod
-}
-#festas {
     color: blue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitulo {
+    color: #78290F;
 }
 
 .box_section {
-    background:yellow;
-    padding:20px;
-    border:10px solid cyan;
-    padding:20px;
-    margin:20px;
-    width:400px;
+    background: yellow;
+    padding: 20px;
+    border: 10px solid cyan;
+    margin: 20px;
+    width: 400px;
     box-sizing: border-box;
-
 }
 
 header {
@@ -33,15 +27,11 @@ header {
     flex-direction: row;
     align-items: flex-end;
     flex-wrap: wrap;
-    grid-area: cabecalho;
 }
 
-
 .menu-principal {
-    background-color:#FF7D00;
+    background-color: #FF7D00;
     padding: 15px;
-    grid-area: conteudo;
-    
 }
 
 .menu-principal a {
@@ -68,45 +58,34 @@ header {
     margin: 30px;
     box-sizing: border-box;
 }
-body {
-    background-color:#FFECD1;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     display: grid;
-     grid-template-columns: 250px 1fr;
-     grid-template-areas: "cabecalho cabecalho"
-     "conteudo conteudo";
 
+body {
+    background-color: #FFECD1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .noticia-oficial {
     text-align: center;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-
 }
+
 .texto-noticia {
     text-align: justify;
     line-height: 1.6;
-color: #FF7D00;
+    color: #FF7D00;
 }
 
 .titulo-noticia {
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 26px;
 }
 
-.subtitulo {
-    color: #78290F;
-}
-
-
 footer {
-    background-color:#78290F ; 
-    color:#FF7D00 ; 
+    background-color: #78290F;
+    color: #FF7D00;
     padding: 20px;
     text-align: center;
-    grid-area: rodape;
 }
-
 
 .galeria-turismo {
     display: grid;
@@ -129,11 +108,6 @@ footer {
 .foto-alta {
     grid-row: 1/3;
     /* A foto está do lado esquerdo */
-
     grid-column: 3;
     /* Neste caso a foto foi "obrigada" a ir pro lado direito. */
-}
-
-.conteudo {
-    grid-area: conteudo;
 }
