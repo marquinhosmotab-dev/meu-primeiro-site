@@ -1,209 +1,97 @@
 <!DOCTYPE html>
-<!-- Informa ao navegador que este documento utiliza HTML5 -->
-
-<html lang="pt-br">
-<!-- Início da página HTML e define que o idioma é português do Brasil -->
-
+<html lang="pt-BR">
 <head>
-    <!-- Informações da página (não aparecem no conteúdo) -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <!-- Permite acentos e caracteres especiais -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Faz a página se adaptar a celulares e tablets -->
-
-    <title>Projeto|Prefeitura</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Liga o HTML ao arquivo CSS -->
-
+        <title class="titulo-principal">Portal Cultural de Canhotinho</title>
+            <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-
-        <img
-            src="./images/logo-canhotinho.png"
-            alt="Logo da Prefeitura de Canhotinho"
-            class="logo"
-        >
-
-        <h1 class="titulo-principal">
-            Cultural de Canhotinho
-        </h1>
-
-        <nav class="menu-principal">
-
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#festas">História</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-
-        </nav>
-
+    <header> 
+      <img src="./images/logo-canhotinho.png" alt="Logo de Canhotinho" width="20%">
     </header>
 
-    <main id="inicio">
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
-        <section class="banner">
-
-            <img
-                src="./images/banner-cidade.jpg"
-                alt="Banner Cidade"
-            >
-
-            <p>
-                Bem-vindo ao maior acervo digital da nossa cidade.
-            </p>
-
-        </section>
-
-        <section id="festas" class="secao-festas">
-
-            <h2>Festas Populares</h2>
-
+    <main class="conteudo-principal">
+       <img src="./images/banner-cidade.jpg" alt="Banner da Cidade de Canhotinho" width="100%">
+        <section id="card-festas" class="card-festas">
+            <h2 class="subtitulo"> Festas Populares</h2>
             <h3>Festa de São Sebastião</h3>
+            <p>O padroeiro de <strong>Canhotinho</strong> é celebrado com muita alegria todo mês de janeiro.</p>
+            <img src="./images/festa-padroeiro.jpg" alt="festa-padroeiro" width="25%">
 
-            <p>
-                O padroeiro de <b>Canhotinho</b> é celebrado com muita alegria todo mês de janeiro.
-            </p>
-
-            <h2 class="subtitulo">
-                Outras festas tradicionais:
-            </h2>
-
-            <ul class="lista-festas">
-                <li>Carnaval de rua</li>
+            <h2 class="subtitulo">Outras festas tradicionais:</h2>
+            <ul>
+                <li>Carnaval de Rua</li>
                 <li>Festa Junina no Centro</li>
                 <li>Aniversário da Cidade</li>
             </ul>
-
         </section>
 
-        <section class="galeria-section">
-
-            <h2 class="subtitulo">
-                Galeria de Fotos
-            </h2>
-
-            <div class="galeria">
-
-                <img
-                    src="./images/igreja-matriz.jpg"
-                    alt="Igreja Matriz de Canhotinho"
-                    class="foto-igreja">
-
-                <img
-                    src="./images/biblioteca.jpg"
-                    alt="Biblioteca"
-                    class="foto-biblioteca">
-
-                <img
-                    src="./images/estatua-do-rio-canhoto.webp"
-                    alt="Estátua"
-                    class="foto-estatua">
-
-                <img
-                    src="./images/festa-padroeiro.jpg"
-                    alt="Festa do Padroeiro"
-                    class="foto-padroeiro">
-
-                <img
-                    src="./images/festival-verao.jpeg"
-                    alt="Festival de Verão"
-                    class="foto-festival">
-
-            </div>
-
+        <section>
+            <h2 class="subtitulo">ACOMPANHE AS NOVIDADES</h2>
+            <p> siga o  <a class="instagram-link" href="https://www.instagram.com/portalculturaldecanhotinho/" target="_blank">Instagram</a> para ficar por dentro das novidades!</p>
         </section>
 
-        <section id="contato" class="novidades">
-
-            <h2 class="subtitulo">
-                Acompanhe as Novidades
-            </h2>
-
-            <p>
-                Siga
-                <a
-                    href="https://www.instagram.com/sectejcanhotinho/"
-                    target="_blank">
-                    Instagram Oficial da Cultura
-                </a>
-                para ver fotos dos eventos!
-            </p>
-
-        </section>
-
-        <section class="participacao">
-
-            <h2 class="subtitulo">
-                Como participar dos Eventos
-            </h2>
-
-            <p>
-                Siga o passo a passo para se inscrever
-            </p>
+      <h2 class="subtitulo">Galeria de fotos</h2>
+      <section class="galeria-turismo">
+  <img src="./images/igreja-matriz.jpg" alt="igreja-matriz" class="foto-turismo foto-destaque">
+  <img src="./images/estatua-do-rio-canhoto.webp" alt="Estatua de Canhotinho" class="foto-turismo foto-alta">
+  <img src="./images/praça-do-centro.jpg" alt="Praça do Centro" class="foto-turismo">
+  <img src="./images/rio-canhonto.jpg" alt="Rio Canhoto" class="foto-turismo">
+  <img src="./images/torre-da-vivo.webp" alt="torre da vivo" class="foto-turismo">
+    </section>
+        <section class="box-section">
+            <h2 class="subtitulo">Como Participar dos Eventos</h2>
+            <p>Siga o passo a passo para se inscrever:</p>
 
             <ol>
                 <li>Acesse o formulário online.</li>
                 <li>Preencha seus dados pessoais.</li>
                 <li>Aguarde o e-mail de confirmação.</li>
             </ol>
-
         </section>
 
-        <article class="informacoes-cidade">
+        <article class="noticia-oficial">
+    <h2 class="titulo-noticia">COMUNICADO OFICIAL: Obras na Estação Ferroviária</h2>
+    
+    <p class="texto-noticia">
+        A Prefeitura Municipal de Canhotinho informa que, a partir da próxima segunda-feira, terão início as obras de restauração da Antiga Estação Ferroviária. O projeto visa preservar o patrimônio histórico e cultural do nosso município.
+    </p>
 
-            <h2 class="subtitulo">
-                Informações da Cidade
-            </h2>
+    <p class="texto-noticia">
+        A Prefeitura Municipal de Canhotinho informa que, a partir da próxima segunda-feira, terão início as obras de restauração da Antiga Estação Ferroviária.
+    </p>
 
-            <p>Localização: Agreste pernambucano</p>
+    <p class="assinatura-noticia">
+        Gabinete do Prefeito<br>
+        <strong>Prefeitura de Canhotinho</strong>
+    </p>
+</article>
 
-            <p>Distância da capital: 210 km</p>
-
-            <p>Atividade principal: Agropecuária e comércio local</p>
-
-        </article>
-
-        <article class="noticia">
-
-            <h2 class="subtitulo">
-                Notícia: Nova exposição no centro
-            </h2>
-
-            <img
-                src="./images/festa-padroeiro.jpg"
-                alt="Festa do Padroeiro">
-
-            <p>
-                A prefeitura convida todos para a
-                <i>Exposição Raízes</i>
-                na antiga estação ferroviária.
-            </p>
-
-        </article>
-
-    </main>
-
-    <footer>
-
-        CANHOTINHO 2026, CITEC © (87)9999-0000
-
-        <br><br>
-
-        <a
-            href="https://wa.me/5587999489800"
-            target="_blank">
-            Fale conosco no WhatsApp!
-        </a>
-
+     <section>
+    <footer class="rodape">
+        <p>Todos os direitos reservados<br>2026
+        <a class="whatsapp-link" href="https://wa.me/5587996129561" target="_blank">Contato via WhatsApp</a></p>
     </footer>
-
-</body>
-
-</html>
+</section>
+<style>
+    body {
+        background-color: #FFFFFF;
+    }
+</style>
+    </main>
