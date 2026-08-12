@@ -48,21 +48,28 @@ main { display:grid; grid-area: conteudo;}
 .secao-noticias {
     display: flex;
     justify-content: center;
-    gap: 30px;}
+    gap: 30px;
+}
 
-.galeria-turismo {display: grid;
-grid-template-columns:1fr  1fr 1fr; gap:20px;
-grid-template-rows:300px 150px;}
+@media (max-width: 768px) {
+    .galeria-turismo {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 
-.foto-turismo {
-          width: 100%;
-          border-radius: 8px; 
-          object-fit: cover; height: 100%;
-           }
+    .foto-destaque {
+        grid-column: auto;
+    }
 
-.foto-destaque{grid-column: span 2;}
+    .foto-alta {
+        grid-column: auto;
+        grid-row: auto;
+    }
 
-.foto-alta{grid-row:1/3; grid-column: 3;}
+    .foto-turismo {
+        height: 250px;
+    }
+}
 
 
 .manchete {
@@ -91,6 +98,184 @@ footer {
     padding: 20px;
     text-align: center;
   display: grid;
-grid-area: rodape;}
+grid-area: rodape;
+}
 
-footer a { color: #a5c9ff; }
+footer a { color: #a5c9ff; 
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "rodape";
+        gap: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 32px;
+    }
+
+    .menu-principal {
+        padding: 15px;
+    }
+
+    .menu-principal ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu-principal li {
+        margin-right: 10px;
+    }
+
+    .box_section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card_festas {
+        margin: 10px 0;
+    }
+
+    .painel-noticias {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "destaque"
+            "noticia1"
+            "noticia2";
+    }
+
+    .galeria-turismo {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .foto-destaque {
+        grid-column: auto;
+    }
+
+    .foto-alta {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .foto-turismo {
+        height: 250px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cabecalho"
+            "menu"
+            "conteudo"
+            "rodape";
+        gap: 10px;
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .titulo-principal {
+        font-size: 32px;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .menu-principal {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu-principal ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .box_section {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .card_festas {
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .secao-noticias {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+    }
+
+    .painel-noticias {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "destaque"
+            "noticia1"
+            "noticia2";
+    }
+
+    .galeria-turismo {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .foto-destaque {
+        grid-column: auto;
+    }
+
+    .foto-alta {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .foto-turismo {
+        width: 100%;
+        height: 250px;
+    }
+
+    p,
+    .noticia-oficial {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
