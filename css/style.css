@@ -1,281 +1,281 @@
-header {display:flex;
-  flex-direction:row;
-align-items:center;
-display:flex; gap: 20px;
-flex-wrap:wrap;
-grid-area:cabecalho;}
-
- .titulo-principal {color:#2e4464;font-size:40px; text-align: center;}
-
-
- .menu-principal {background-color:  #365E9A;
-padding:20px; display: grid; grid-area: menu;}
-
-.menu-principal a {text-decoration:none; color: #fcfcfc;}
-
-.menu-principal ul {display: flex;
-list-style: none;
-margin:0px;
-padding:0px; 
+/* ============================================
+   VARIÁVEIS DE COR — Identidade Canhotinho-PE
+   ============================================ */
+:root {
+  /* Símbolos Oficiais e Brasão */
+  --canhotinho-azul-real: #104e8b;
+  --canhotinho-ouro: #ffd700;
+  --canhotinho-branco: #ffffff;
+  /* Identidade Institucional da Prefeitura */
+  --canhotinho-azul-institucional: #0f2c59;
+  --canhotinho-laranja-vibrante: #ff6b35;
+  --canhotinho-azul-apoio: #4ea8de;
+  /* Paisagem e Elementos Locais */
+  --canhotinho-verde-vegetacao: #2d6a4f;
+  --canhotinho-azul-reservatorio: #0077b6;
+  --canhotinho-laranja-entardecer: #000000;
 }
 
-.menu-principal li {margin-right: 20px;}
-
- body{background-color: #fafbf3;font-family: "roboto"; display: grid;
-  grid-template-columns: 250px;
-grid-template-areas:
-"cabecalho cabecalho"
-"menu conteudo"
-"rodape rodape"; 
-gap:20px;}
-
-main { display:grid; grid-area: conteudo;}
-
- h2 {color:#365E9A;}
-
-  .subtitulo {background-color: rgb(255, 213, 0);}
-
-  .box_section {background-color: #dfe5f7;border:2px solid rgb(48, 48, 196);padding:20px;margin:20px;width:400px;box-sizing: border-box;}
-
-  .card_festas {background-color: rgb(253, 255, 228);padding:20px;border:3px;margin:30px;box-sizing: border-box;}
-
- 
-  .noticia-oficial { text-align:center; font-family: 'Comic Sans MS', cursive, sans-serif;}
-
-  .texto-noticia{  line-height: 1}
-  a{color: #ffea00;}
-
-.secao-noticias {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+/* ============================================
+   RESET / BASE
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-@media (max-width: 768px) {
-    .galeria-turismo {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
+a {
+  color: var(--canhotinho-azul-apoio);
+  text-decoration: none;
+}
 
-    .foto-destaque {
-        grid-column: auto;
-    }
+/* ============================================
+   LAYOUT GERAL (grid do body)
+   Cor do body mantida IGUAL ao original — não mexi aqui.
+   ============================================ */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(237, 229, 229);
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas:
+    "cabeçalho cabeçalho"
+    "menu conteudo"
+    "rodape rodape";
+}
 
-    .foto-alta {
-        grid-column: auto;
-        grid-row: auto;
-    }
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* corrigido: "space-evenly" não existe pra align-items, só pra justify-content */
+  gap: 20px;
+  flex-wrap: wrap;
+  grid-area: cabeçalho;
+}
 
-    .foto-turismo {
-        height: 250px;
-    }
+.titulo-principal {
+  /* as duas declarações duplicadas de .titulo-principal do original viraram uma só */
+  color: var(--canhotinho-azul-real);
+  font-size: 40px;
+}
+
+.subtitulo {
+  color: var(--canhotinho-ouro);
+  font-size: 24px;
+}
+
+.whatsapp-link {
+  color: rgb(4, 249, 4); /* mantido: é a cor de marca do WhatsApp, não faz parte da paleta de Canhotinho */
+}
+
+.instagram-link {
+  color: rgb(0, 247, 255); /* mantido: é a cor de marca do Instagram, não faz parte da paleta de Canhotinho */
+}
+
+/* ============================================
+   MENU
+   ============================================ */
+.menu-principal {
+  background-color: var(--canhotinho-azul-institucional);
+  color: var(--canhotinho-branco);
+  text-align: center;
+  padding: 15px;
+  grid-area: menu;
+  border: 4px solid var(--canhotinho-azul-apoio);
+}
+
+.menu-principal ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu-principal a {
+  text-decoration: none;
+}
+
+/* ============================================
+   CONTEÚDO / MAIN
+   ============================================ */
+main {
+  grid-area: conteudo;
+}
+
+/* ============================================
+   COMPONENTES
+   ============================================ */
+.card-festas {
+  /* original tinha .card-festas declarado duas vezes, com valores diferentes (a 2ª sobrescrevia a 1ª); uni numa só */
+  background-color:#0f2c59;
+  border: 4px solid var(--canhotinho-laranja-vibrante);
+  padding: 30px;
+  margin: 30px;
+  width: 400px;
+}
+
+
+.a {
+    color: #000000;
+}
+
+
+.box-section {
+  background:#0f2c59;
+  padding: 20px;
+  border: 4px solid var(--canhotinho-azul-apoio);
+  margin: 20px;
+  width: 400px;
+}
+
+.noticia-oficial {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: var(--canhotinho-azul-real);
+  text-align: center;
+  margin: 20px;
+}
+
+/* ============================================
+   PAINEL DE NOTÍCIAS
+   ============================================ */
+.painel-noticias {
+  color: #0f2c59;
+    display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "destaque noticia-1"
+    "destaque noticia-2";
+}
+
+
+
+h2 {
+    color: black;
+}
+
+label {
+    color: black;
+}
+
+th,
+td {
+    color: black;
+}
+
+
+section {
+    color: black;
 }
 
 
 .manchete {
-    grid-area:destaque ;
+  grid-area: destaque;
 }
+
 .secundaria-1 {
-    grid-area: noticia1;
+  grid-area: noticia-1;
 }
 
 .secundaria-2 {
-    grid-area: noticia2;
+  grid-area: noticia-2;
 }
 
-.painel-noticias {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "destaque noticia1" "destaque noticia2";
-}
-
-
-
-footer {
-    background-color: #2e4464; 
-    color: #ffffff; 
-    padding: 20px;
-    text-align: center;
+/* ============================================
+   GALERIA DE TURISMO
+   ============================================ */
+.galeria-turismo {
   display: grid;
-grid-area: rodape;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 150px;
+  gap: 20px;
 }
 
-footer a { color: #a5c9ff; 
+.foto-turismo {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
+.foto-destaque {
+  grid-column: span 2;
+}
 
+.foto-alta {
+  grid-row: span 2;
+}
 
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: var(--canhotinho-azul-institucional);
+  color: #ffffff;
+  text-align: center;
+  border: 4px solid var(--canhotinho-azul-apoio);
+  grid-area: rodape;
+}
+
+/* ============================================
+   RESPONSIVO — os 7 blocos @media repetidos do
+   original viraram um só
+   ============================================ */
 @media (max-width: 768px) {
+  body {
+    background-color: #000000; /* mantido igual ao original, por pedido seu */
+  }
 
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "cabecalho"
-            "menu"
-            "conteudo"
-            "rodape";
-        gap: 10px;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .titulo-principal {
-        font-size: 32px;
-    }
+  .menu-principal {
+    padding: 0 15px;
+    /* removi "grid-template-columns: 1fr" daqui: .menu-principal não é display:grid lá em cima,
+       então essa linha não fazia nada no original */
+  }
 
-    .menu-principal {
-        padding: 15px;
-    }
+  nav ul {
+    /* ATENÇÃO: não existe elemento <nav> em nenhum outro lugar deste CSS — seu menu é .menu-principal.
+       Se essa regra é pro menu, troque o seletor pra ".menu-principal ul" */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 
-    .menu-principal ul {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  footer {
+    /* ATENÇÃO: footer não tem "display:flex" na regra lá em cima, então flex-direction ainda não
+       tem efeito nenhum. Se quiser essa coluna no mobile, adicione "display: flex;" no footer acima. */
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-    .menu-principal li {
-        margin-right: 10px;
-    }
+  h1 {
+    font-size: 2rem; /* corrigido de ".h1": sem o ponto, agora afeta os <h1> de verdade */
+  }
 
-    .box_section {
-        width: 100%;
-        margin: 10px 0;
-    }
+  p {
+    font-size: 1rem; /* corrigido de ".p": sem o ponto, agora afeta os <p> de verdade */
+  }
 
-    .card_festas {
-        margin: 10px 0;
-    }
+  .galeria-turismo {
+    grid-template-columns: 1fr;
+  }
 
-    .painel-noticias {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "destaque"
-            "noticia1"
-            "noticia2";
-    }
+  .foto-destaque {
+    grid-column: span 1;
+  }
 
-    .galeria-turismo {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .foto-destaque {
-        grid-column: auto;
-    }
-
-    .foto-alta {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .foto-turismo {
-        height: 250px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "cabecalho"
-            "menu"
-            "conteudo"
-            "rodape";
-        gap: 10px;
-        width: 100%;
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    header {
-        width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .titulo-principal {
-        font-size: 32px;
-        text-align: center;
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    .menu-principal {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .menu-principal ul {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    main {
-        width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .box_section {
-        width: 100%;
-        margin: 10px 0;
-        box-sizing: border-box;
-    }
-
-    .card_festas {
-        width: 100%;
-        margin: 10px 0;
-        box-sizing: border-box;
-    }
-
-    .secao-noticias {
-        width: 100%;
-        min-width: 0;
-        flex-direction: column;
-    }
-
-    .painel-noticias {
-        width: 100%;
-        min-width: 0;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "destaque"
-            "noticia1"
-            "noticia2";
-    }
-
-    .galeria-turismo {
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .foto-destaque {
-        grid-column: auto;
-    }
-
-    .foto-alta {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .foto-turismo {
-        width: 100%;
-        height: 250px;
-    }
-
-    p,
-    .noticia-oficial {
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    footer {
-        width: 100%;
-        box-sizing: border-box;
-    }
+  .foto-alta {
+    grid-row: span 1;
+  }
 }
